@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <router-view/>
-    <draw-footer></draw-footer>
+    <img class="logo" src="../static/imgs/logo.png" alt="">
+    <!-- <draw-footer></draw-footer> -->
   </div>
 </template>
 
@@ -23,5 +24,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo {
+  width: .46rem;
+  height: .5rem;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 </style>

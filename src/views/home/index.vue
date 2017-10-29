@@ -2,7 +2,7 @@
   <div class="home">
     <ul>
       <li v-for="(staff, idx) in staffs" v-show="flag == idx">
-        <img :src="'/static/imgs/headshot-' + staff.img + '.jpg'" alt="">
+        <img :src="'./static/imgs/headshot-' + staff.img + '.jpg'" alt="">
         <p>{{staff.name}}</p>
       </li>
     </ul>
@@ -59,6 +59,7 @@ export default {
 </script>
 
 <style lang="less">
+@import "../../styles/main.less";
 .home {
   padding: 14px;
    ul {
@@ -89,13 +90,6 @@ export default {
        font-size: .36rem;
        font-weight: 600;
      }
-   }
-   button {
-     width: 80%;
-     background: #1164ad;
-     border-radius: 5px;
-     color: #FFF;
-     padding: 6px;
    }
 }
 

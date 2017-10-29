@@ -1,8 +1,14 @@
 <template lang="html">
   <div class="add-staff">
-    <label for="">姓名：</label><input type="text" name="" value="">
-    <label for="">部门：</label><input type="text" name="" value="">
-    <button type="button" name="button">添加</button>
+    <div class="">
+      <label for="">姓名：</label><input type="text" name="" value="">
+    </div>
+    <div class="">
+      <label for="">部门：</label><input type="text" name="" value="">
+    </div>
+    <div class="">
+      <button type="button" name="button">add</button>
+    </div>
   </div>
 </template>
 
@@ -11,5 +17,13 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="less">
+.add-staff {
+  div {
+    margin: 6px auto 20px;
+    button {
+      margin-top: 30px;
+    }
+  }
+}
 </style>
