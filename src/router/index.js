@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/views/Home'
-import Add from '@/views/Add'
+import Home from '../views/home'
+import Add from '../views/add'
 
 Vue.use(Router)
 

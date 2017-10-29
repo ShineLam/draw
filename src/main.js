@@ -10,6 +10,15 @@ import './styles/reset.css'
 
 Vue.config.productionTip = false
 
+// 路由跳转公用方法
+Vue.prototype.goto = function (name, query, params) {
+  this.$router.push({
+    name: name,
+    query: query || {},
+    params: params || {}
+  })
+}
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

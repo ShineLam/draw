@@ -14,8 +14,6 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "less": "^3.0.0-alpha.3",
-    "less-loader": "^4.0.5",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
