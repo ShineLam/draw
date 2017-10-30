@@ -4,6 +4,7 @@
     <ul>
       <li v-for="item in records">
         <span>{{item.today}}</span>
+        <span>{{item.department}}</span>
         <i>{{item.name}}</i>
       </li>
     </ul>
@@ -37,13 +38,14 @@ export default {
 </script>
 
 <style lang="less">
+@import "../../styles/main.less";
 .records {
   ul {
     li {
       margin: .2rem auto;
       span,i {
         display: inline-block;
-        min-width: 2rem;
+        min-width: 1.5rem;
       }
     }
   }
