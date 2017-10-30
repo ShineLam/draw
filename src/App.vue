@@ -2,7 +2,7 @@
   <div id="app">
     <router-view/>
     <img class="logo" src="../static/imgs/logo.png" alt="">
-    <!-- <draw-footer></draw-footer> -->
+    <draw-footer></draw-footer>
   </div>
 </template>
 

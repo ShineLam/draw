@@ -11,7 +11,7 @@ export default {
       btn: [{
         name: 'home'
       }, {
-        name: 'add'
+        name: 'record'
       }],
       flag: 0
     }

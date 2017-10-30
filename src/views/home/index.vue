@@ -16,6 +16,8 @@
 
 <script>
 import staffs from '../../../static/data/staffs.json'
+import '../../utils/common.js'
+var record = []
 export default {
   data () {
     return {
@@ -24,6 +26,7 @@ export default {
       winner: false,
       btnTxt: 'Start',
       r: '',
+      today: new Date().format('yyyyMMdd'),
       staffs: [],
       staff: {}
     }
@@ -52,6 +55,9 @@ export default {
         this.sOrE = true
         this.winner = true
         this.staff = this.staffs[this.flag]
+        this.staff.today = this.today
+        record.push(this.staff)
+        window.localStorage.draw_record = JSON.stringify(record)
       }
     }
   }
